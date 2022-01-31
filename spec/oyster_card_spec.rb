@@ -38,7 +38,12 @@ describe OysterCard do
   end
 
   describe "#touch_in" do
-    it "should touch in" do
+    it "should not touch in if there is insufficient balance" do
+      expect{ subject.touch_in }.to raise_error("Insufficient balance")
+    end
+
+    it "should touch in if there is sufficient balance" do
+      subject.top_up(1)
       subject.touch_in
       expect(subject).to be_in_journey
     end 
@@ -51,4 +56,5 @@ describe OysterCard do
     end
   end
   
+
 end

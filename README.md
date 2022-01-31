@@ -80,3 +80,13 @@ This is the second week of Makers. We will create an oyster card system.
 * Use an RSpec predicate matcher to check if the card is in use - Done
 * Use boolean values to store the state of the card - Done
  
+ 9. Checking minimum balance on touch in
+* Write up a plan for how you will interact with your code and manually test in IRB - Done
+  ### Plan
+  * Feature test - oystercard.minimum_balance?
+  * Unit test - check minimum balance on touch in 
+  * Unit test - throw error if insufficient balance
+* Write a test that checks that an error is thrown if a card with insufficient balance is touched in - Done
+* Write the implementation - Done
+* Update existing tests, if necessary, to make sure they still pass - Done
+* Refactor to remove any magic numbers and replace with a constant - Done
