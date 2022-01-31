@@ -42,3 +42,16 @@ This is the second week of Makers. We will create an oyster card system.
  * Write a test for the top_up method - Done
  * Make sure the test fails before implementing the method - Done
  * Implement the method to make the test pass - Done
+
+6. Enforce maximum balance
+  * Write up a plan for how you will interact with your code and manually test in IRB.
+    ### Plan
+    * Feature test - oystercard.maximum_amount?
+    * Unit test - test if the amount added by top up will exceed the maximum amount. Test for raised error.
+  * Write a test that checks the top_up method throws an exception if the new balance would exceed the limit. - Done
+  * Use a constant to store the limit - Done
+  * Implement the limit in the top_up method. Use an inline if statement to check if the limit would be exceeded - Done
+  * Make the error message include the limit value - Done
+  * Use interpolation to keep your code DRY - Done
+
+ 
