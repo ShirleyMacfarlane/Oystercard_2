@@ -67,13 +67,16 @@ This is the second week of Makers. We will create an oyster card system.
 * Write up a plan for how you will interact with your code and manually test in IRB.
     ### Plan (Touch_in)
     * Feature test - oystercard.touch_in
-    * Unit test - Check oystercard is touched in
+    * Unit test - Check oystercard if the card is on a journey
     ### Plan (In_journey)
     * Feature test - oystercard.in_journey?
-    * Unit test - Check in_journey is true
-* Write tests for in_journey?, touch_in and touch_out
-* Write implementation of these methods that will make the tests pass
-* Use an instance variable to track whether the card is in use
-* Use an RSpec predicate matcher to check if the card is in use
-* Use boolean values to store the state of the card
+    * Unit test - Check if journey default is False
+    ### Plan (Touch_out)
+    * Feature test - oystercard.touch_out
+    * Unit test - check if oystercard is not on a journey
+* Write tests for in_journey?, touch_in and touch_out - Done
+* Write implementation of these methods that will make the tests pass - Done
+* Use an instance variable to track whether the card is in use - Done
+* Use an RSpec predicate matcher to check if the card is in use - Done
+* Use boolean values to store the state of the card - Done
  
