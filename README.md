@@ -54,4 +54,12 @@ This is the second week of Makers. We will create an oyster card system.
   * Make the error message include the limit value - Done
   * Use interpolation to keep your code DRY - Done
 
+7. Deduct the money
+ * Write up a plan for how you will interact with your code and manually test in IRB - Done
+    ### Plan
+    * Feature test - oystercard.deduct(arg)
+    * Unit test - test for deduct method with an argument
+    * Unit test - test amount is deducted from balance
+ * Write a test for the deduct method, see it fail - Done
+ * Implement the method, see the test pass - Done
  
