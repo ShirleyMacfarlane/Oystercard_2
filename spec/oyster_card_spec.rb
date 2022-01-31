@@ -31,4 +31,18 @@ describe OysterCard do
     end
   end
 
+  describe "#in_journey?" do
+    it "should show in journey to be false when card has not touched in" do
+      expect(subject).not_to be_in_journey
+    end 
+  end
+
+describe "#touch_in" do
+    it "should touch in" do
+      subject.touch_in
+      expect(subject).to be_in_journey
+    end 
+  end
+
+
 end

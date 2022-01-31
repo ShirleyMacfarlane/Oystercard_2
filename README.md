@@ -62,4 +62,18 @@ This is the second week of Makers. We will create an oyster card system.
     * Unit test - test amount is deducted from balance
  * Write a test for the deduct method, see it fail - Done
  * Implement the method, see the test pass - Done
+
+8. Add touch in/out support
+* Write up a plan for how you will interact with your code and manually test in IRB.
+    ### Plan (Touch_in)
+    * Feature test - oystercard.touch_in
+    * Unit test - Check oystercard is touched in
+    ### Plan (In_journey)
+    * Feature test - oystercard.in_journey?
+    * Unit test - Check in_journey is true
+* Write tests for in_journey?, touch_in and touch_out
+* Write implementation of these methods that will make the tests pass
+* Use an instance variable to track whether the card is in use
+* Use an RSpec predicate matcher to check if the card is in use
+* Use boolean values to store the state of the card
  
