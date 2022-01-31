@@ -32,3 +32,13 @@ This is the second week of Makers. We will create an oyster card system.
   * Write code that will make this test pass - Done
   * Now refactor by setting the balance in initialize using an instance variable - Done
   * Remove the balance method entirely and replace with an attr_reader - Done
+
+5. Enable top up functionality 
+ * Write up a plan for how you will interact with your code and manually test in IRB.
+  ### Plan
+  * Feature test - oystercard.top_up(arg)
+  * Unit test - test for a top_up method with an argument
+  * Unit test - check top_up is added to balance
+ * Write a test for the top_up method - Done
+ * Make sure the test fails before implementing the method - Done
+ * Implement the method to make the test pass - Done
