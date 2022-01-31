@@ -8,3 +8,5 @@ This is the second week of Makers. We will create an oyster card system.
   > specify the latest Ruby version - Done
   > add the rspec gem to ‘test’ and ’development’ groups - Done
   > commit only this Gemfile - Done
+
+2. Create RSpec conventional files
