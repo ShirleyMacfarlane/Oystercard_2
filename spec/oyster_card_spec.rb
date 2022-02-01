@@ -55,7 +55,7 @@ describe OysterCard do
       expect(subject).to be_in_journey
     end 
 
-    it "should accept the entry staion of the current journey" do
+    it "should accept the entry station of the current journey" do
       subject.top_up(1)
       expect(subject.touch_in(:station)).to eq subject.entry_station
     end 
