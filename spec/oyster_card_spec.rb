@@ -22,14 +22,20 @@ describe OysterCard do
     end
   end
 
-  describe "#deduct" do
-    it { is_expected.to respond_to(:deduct).with(1).argument}
+  # Removed as deduct method is private
+  # describe "#deduct" do
+  #   it { is_expected.to respond_to(:deduct).with(1).argument }
 
-    it "should deduct amount from balance" do
-      subject.top_up(10)
-      expect{ subject.deduct(10) }.to change { subject.balance }.by -10
-    end
-  end
+  #   it "should deduct amount from balance" do
+  #     subject.top_up(10)
+  #     expect{ subject.deduct(10) }.to change { subject.balance }.by -10
+  #   end
+
+  #   it "should decrease balance by minimum fare" do
+    #   subject.top_up(1)
+    #   expect{ subject.deduct(1) }.to change{ subject.balance }.by(-1)
+    # end
+  # end
 
   describe "#in_journey?" do
     it "should show in journey to be false when card has not touched in" do
@@ -54,7 +60,12 @@ describe OysterCard do
       subject.touch_out
       expect(subject).not_to be_in_journey
     end
+
+    it "should deduct minimum fare from balance when touched out" do
+      subject.top_up(1)
+      subject.touch_in
+      expect{ subject.touch_out }.to change{ subject.balance }.by(-OysterCard::MINIMUM_BALANCE)
+    end 
   end
-  
 
 end

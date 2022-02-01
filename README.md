@@ -90,3 +90,14 @@ This is the second week of Makers. We will create an oyster card system.
 * Write the implementation - Done
 * Update existing tests, if necessary, to make sure they still pass - Done
 * Refactor to remove any magic numbers and replace with a constant - Done
+
+10. Charging for the journey
+ * Write up a plan for how you will interact with your code and manually test in IRB - Done
+ ### Plan
+  * Feature test - oystercard.touch_out decreases balance
+  * Unit test - deduct method deduct minimum fare from balance
+  * Unit test - deduct minimum fare when touched out
+ * Write a test that uses expect {}.to change{}.by() syntax to check that a charge is made on touch out - Done
+ * Update the touch_out method to make the test pass - Done
+ * Make '#deduct' a private method - Done
+ * Keep the code DRY - Done
