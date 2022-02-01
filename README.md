@@ -101,3 +101,12 @@ This is the second week of Makers. We will create an oyster card system.
  * Update the touch_out method to make the test pass - Done
  * Make '#deduct' a private method - Done
  * Keep the code DRY - Done
+
+ 11. Saving the entry station
+ * Write up a plan for how you will interact with your code and manually test in IRB - Done
+ ### Plan
+  * Feature test - oyster.touch_in to accept and remember the entry station. Oyster.touch_out to forget entry station
+  * Unit test - touch_in to accept an entry station
+  * Unit test - touch_out to forget an entry_staion
+
+ * Refactor in_journey method to in_journey variable to infer status based on whether there is an entry station or not
