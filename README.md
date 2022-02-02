@@ -110,3 +110,17 @@ This is the second week of Makers. We will create an oyster card system.
   * Unit test - touch_out to forget an entry_staion
 
  * Refactor in_journey method to in_journey variable to infer status based on whether there is an entry station or not
+
+  12. Adding Journey History
+ * Write up a plan for how you will interact with your code and manually test in IRB - Done
+ ### Plan
+  * Feature test - oyster.touch_out to accept an exit station. Set up an instance variable to hold a list of journeys. The journey instace defaults to an empty list. Refactor the code to remove the entry_sttion and exit_statiob variables
+  oyster.touch_in and oyster.touch_out creates a single journey.
+  * Unit test - touch_out to accept an exit station
+  * Unit test - empty list of journeys by default
+  * Unit test - expect touch_in to add an entry_station to the journey
+  * Unit test - expect touch_out add an exit station to the journey
+  * Unit test - new variable to accept a list of journeys
+  * Unit test  -that touching in and out creates one journey
+  
+
